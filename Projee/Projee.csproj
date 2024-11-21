@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6F9295A-C0A4-4530-B3FD-3092FDC6EC7A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Projee</RootNamespace>
+    <AssemblyName>Projee</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giriş Sayfası\AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Sayfası\AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş Sayfası\GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Sayfası\GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş Sayfası\KayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Sayfası\KayitEkrani.Designer.cs">
+      <DependentUpon>KayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş Sayfası\Masalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Sayfası\Masalar.Designer.cs">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giriş Sayfası\Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giriş Sayfası\Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\AnaYemek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\AnaYemek.Designer.cs">
+      <DependentUpon>AnaYemek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\Atistirmalik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\Atistirmalik.Designer.cs">
+      <DependentUpon>Atistirmalik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\Corba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\Corba.Designer.cs">
+      <DependentUpon>Corba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\Meze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\Meze.Designer.cs">
+      <DependentUpon>Meze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\Salata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\Salata.Designer.cs">
+      <DependentUpon>Salata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\SicakIcecek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\SicakIcecek.Designer.cs">
+      <DependentUpon>SicakIcecek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\SogukIcecek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\SogukIcecek.Designer.cs">
+      <DependentUpon>SogukIcecek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\SutluTatli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\SutluTatli.Designer.cs">
+      <DependentUpon>SutluTatli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü\ŞerbetliTatli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü\ŞerbetliTatli.Designer.cs">
+      <DependentUpon>ŞerbetliTatli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="İşlemler\IFisGoster.cs" />
+    <Compile Include="İşlemler\IFormGoster.cs" />
+    <Compile Include="İşlemler\INumericUpDownIslemleri.cs" />
+    <Compile Include="İşlemler\IToplamFiyat.cs" />
+    <Compile Include="İşlemler\YeniKayit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Giriş Sayfası\AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş Sayfası\GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş Sayfası\KayitEkrani.resx">
+      <DependentUpon>KayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş Sayfası\Masalar.resx">
+      <DependentUpon>Masalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giriş Sayfası\Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\AnaYemek.resx">
+      <DependentUpon>AnaYemek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\Atistirmalik.resx">
+      <DependentUpon>Atistirmalik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\Corba.resx">
+      <DependentUpon>Corba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\Meze.resx">
+      <DependentUpon>Meze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\Salata.resx">
+      <DependentUpon>Salata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\SicakIcecek.resx">
+      <DependentUpon>SicakIcecek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\SogukIcecek.resx">
+      <DependentUpon>SogukIcecek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\SutluTatli.resx">
+      <DependentUpon>SutluTatli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü\ŞerbetliTatli.resx">
+      <DependentUpon>ŞerbetliTatli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
